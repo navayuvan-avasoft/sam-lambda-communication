@@ -26,11 +26,12 @@ app.post("/users", (req, res) => {
 app.post("/users/todos", (req, res) => {
   const Payload = {
     httpMethod: "POST",
-    path: "/todos",
+    path: "/todos/1",
     headers: { "content-type": "application/json" },
-    body: '{"name":"navayuvan"}',
+    body: JSON.stringify(req.body),
     isBase64Encoded: false,
   };
+
   const FunctionName = "TodosFunction";
 
   lambda
@@ -39,14 +40,6 @@ app.post("/users/todos", (req, res) => {
     .then((response) => {
       res.json(JSON.parse(response.Payload));
     });
-
-  // axios
-  //   .post("http://192.168.201.149:3000/todos", {
-  //     name: "Navayuvan",
-  //   })
-  //   .then((response) => {
-  //     res.json(response.data);
-  //   });
 });
 
 module.exports.lambdaHandler = serverless(app);

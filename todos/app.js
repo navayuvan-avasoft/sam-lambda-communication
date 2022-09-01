@@ -1,5 +1,8 @@
+const { json } = require("express");
 const express = require("express");
 const app = express();
+require("run-middleware")(app);
+
 const serverless = require("serverless-http");
 
 const todoRouter = require("./src/todo.router");
@@ -8,7 +11,22 @@ app.use(express.json());
 
 app.use("/todos", todoRouter);
 
-app.use("/todos/*/functions/TodosFunction/invocations", todoRouter);
+app.use("/todos/*/functions/TodosFunction/invocations", (req, res) => {
+  const body = JSON.parse(Buffer.from(req.body).toString());
+  app.runMiddleware(
+    body.path,
+    {
+      method: body.httpMethod,
+      body: body.body,
+      original_req: req,
+      original_res: res,
+    },
+    function (code, data) {
+      console.log(data);
+      res.json(data);
+    }
+  );
+});
 
 const handler = serverless(app);
 

@@ -1,40 +1,43 @@
-START RequestId: 31cad095-49f1-4ee5-86e8-b6b6ce74264a Version: $LATEST
-START RequestId: 504ca696-f067-47ba-a47b-36dc0d8ba4f1 Version: $LATEST
-2022-09-01T09:35:19.419Z	504ca696-f067-47ba-a47b-36dc0d8ba4f1	INFO	{"callbackWaitsForEmptyEventLoop":true,"functionVersion":"$LATEST","functionName":"TodosFunction","memoryLimitInMB":"128","logGroupName":"aws/lambda/TodosFunction","logStreamName":"$LATEST","invokedFunctionArn":"arn:aws:lambda:us-east-1:012345678912:function:TodosFunction","awsRequestId":"504ca696-f067-47ba-a47b-36dc0d8ba4f1"}
-2022-09-01T09:35:19.451Z	504ca696-f067-47ba-a47b-36dc0d8ba4f1	INFO	<Buffer 7b 0a 20 20 22 68 74 74 70 4d 65 74 68 6f 64 22 3a 20 22 50 4f 53 54 22 2c 0a 20 20 22 70 61 74 68 22 3a 20 22 2f 74 6f 64 6f 73 22 2c 0a 20 20 22 68 ... 116 more bytes>
-END RequestId: 504ca696-f067-47ba-a47b-36dc0d8ba4f1
-REPORT RequestId: 504ca696-f067-47ba-a47b-36dc0d8ba4f1	Init Duration: 1.18 ms	Duration: 2118.93 ms	Billed Duration: 2119 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
-END RequestId: 31cad095-49f1-4ee5-86e8-b6b6ce74264a
-REPORT RequestId: 31cad095-49f1-4ee5-86e8-b6b6ce74264a	Init Duration: 1.04 ms	Duration: 5698.00 ms	Billed Duration: 5699 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
-START RequestId: fcdde6ca-34ac-452f-872f-8158626149fd Version: $LATEST
-START RequestId: 2484ba14-04d2-48c1-8499-125eec799068 Version: $LATEST
-2022-09-01T09:36:27.420Z	2484ba14-04d2-48c1-8499-125eec799068	INFO	{"callbackWaitsForEmptyEventLoop":true,"functionVersion":"$LATEST","functionName":"TodosFunction","memoryLimitInMB":"128","logGroupName":"aws/lambda/TodosFunction","logStreamName":"$LATEST","invokedFunctionArn":"arn:aws:lambda:us-east-1:012345678912:function:TodosFunction","awsRequestId":"2484ba14-04d2-48c1-8499-125eec799068"}
-2022-09-01T09:36:27.490Z	2484ba14-04d2-48c1-8499-125eec799068	ERROR	TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined    at Function.from (buffer.js:330:9)    at /var/task/src/todo.router.js:5:23    at Layer.handle [as handle_request] (/var/task/node_modules/express/lib/router/layer.js:95:5)    at next (/var/task/node_modules/express/lib/router/route.js:144:13)    at Route.dispatch (/var/task/node_modules/express/lib/router/route.js:114:3)    at Layer.handle [as handle_request] (/var/task/node_modules/express/lib/router/layer.js:95:5)    at /var/task/node_modules/express/lib/router/index.js:284:15    at Function.process_params (/var/task/node_modules/express/lib/router/index.js:346:12)    at next (/var/task/node_modules/express/lib/router/index.js:280:10)    at Function.handle (/var/task/node_modules/express/lib/router/index.js:175:3)
-END RequestId: 2484ba14-04d2-48c1-8499-125eec799068
-REPORT RequestId: 2484ba14-04d2-48c1-8499-125eec799068	Init Duration: 0.88 ms	Duration: 2003.23 ms	Billed Duration: 2004 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
-START RequestId: 7906e293-3c66-49bc-b4b5-5fc224890c49 Version: $LATEST
-2022-09-01T09:36:29.973Z	7906e293-3c66-49bc-b4b5-5fc224890c49	INFO	{"callbackWaitsForEmptyEventLoop":true,"functionVersion":"$LATEST","functionName":"TodosFunction","memoryLimitInMB":"128","logGroupName":"aws/lambda/TodosFunction","logStreamName":"$LATEST","invokedFunctionArn":"arn:aws:lambda:us-east-1:012345678912:function:TodosFunction","awsRequestId":"7906e293-3c66-49bc-b4b5-5fc224890c49"}
-2022-09-01T09:36:30.034Z	7906e293-3c66-49bc-b4b5-5fc224890c49	ERROR	TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined    at Function.from (buffer.js:330:9)    at /var/task/src/todo.router.js:5:23    at Layer.handle [as handle_request] (/var/task/node_modules/express/lib/router/layer.js:95:5)    at next (/var/task/node_modules/express/lib/router/route.js:144:13)    at Route.dispatch (/var/task/node_modules/express/lib/router/route.js:114:3)    at Layer.handle [as handle_request] (/var/task/node_modules/express/lib/router/layer.js:95:5)    at /var/task/node_modules/express/lib/router/index.js:284:15    at Function.process_params (/var/task/node_modules/express/lib/router/index.js:346:12)    at next (/var/task/node_modules/express/lib/router/index.js:280:10)    at Function.handle (/var/task/node_modules/express/lib/router/index.js:175:3)
-END RequestId: 7906e293-3c66-49bc-b4b5-5fc224890c49
-REPORT RequestId: 7906e293-3c66-49bc-b4b5-5fc224890c49	Init Duration: 1.06 ms	Duration: 1996.13 ms	Billed Duration: 1997 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
-START RequestId: 06c6c690-4c33-46ed-b4d0-da3026ebca88 Version: $LATEST
-2022-09-01T09:36:32.766Z	06c6c690-4c33-46ed-b4d0-da3026ebca88	INFO	{"callbackWaitsForEmptyEventLoop":true,"functionVersion":"$LATEST","functionName":"TodosFunction","memoryLimitInMB":"128","logGroupName":"aws/lambda/TodosFunction","logStreamName":"$LATEST","invokedFunctionArn":"arn:aws:lambda:us-east-1:012345678912:function:TodosFunction","awsRequestId":"06c6c690-4c33-46ed-b4d0-da3026ebca88"}
-2022-09-01T09:36:32.836Z	06c6c690-4c33-46ed-b4d0-da3026ebca88	ERROR	TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined    at Function.from (buffer.js:330:9)    at /var/task/src/todo.router.js:5:23    at Layer.handle [as handle_request] (/var/task/node_modules/express/lib/router/layer.js:95:5)    at next (/var/task/node_modules/express/lib/router/route.js:144:13)    at Route.dispatch (/var/task/node_modules/express/lib/router/route.js:114:3)    at Layer.handle [as handle_request] (/var/task/node_modules/express/lib/router/layer.js:95:5)    at /var/task/node_modules/express/lib/router/index.js:284:15    at Function.process_params (/var/task/node_modules/express/lib/router/index.js:346:12)    at next (/var/task/node_modules/express/lib/router/index.js:280:10)    at Function.handle (/var/task/node_modules/express/lib/router/index.js:175:3)
-END RequestId: 06c6c690-4c33-46ed-b4d0-da3026ebca88
-REPORT RequestId: 06c6c690-4c33-46ed-b4d0-da3026ebca88	Init Duration: 0.97 ms	Duration: 2103.96 ms	Billed Duration: 2104 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
-START RequestId: 7bd837cc-3875-4d0e-bb0c-9c4fe4445806 Version: $LATEST
-START RequestId: 002369b6-0730-4176-9ddf-981ee6e1f91e Version: $LATEST
-2022-09-01T09:36:56.697Z	002369b6-0730-4176-9ddf-981ee6e1f91e	INFO	{"callbackWaitsForEmptyEventLoop":true,"functionVersion":"$LATEST","functionName":"TodosFunction","memoryLimitInMB":"128","logGroupName":"aws/lambda/TodosFunction","logStreamName":"$LATEST","invokedFunctionArn":"arn:aws:lambda:us-east-1:012345678912:function:TodosFunction","awsRequestId":"002369b6-0730-4176-9ddf-981ee6e1f91e"}
-2022-09-01T09:36:56.726Z	002369b6-0730-4176-9ddf-981ee6e1f91e	INFO	<Buffer 7b 22 68 74 74 70 4d 65 74 68 6f 64 22 3a 22 50 4f 53 54 22 2c 22 70 61 74 68 22 3a 22 2f 74 6f 64 6f 73 22 2c 22 68 65 61 64 65 72 73 22 3a 7b 22 63 ... 91 more bytes>
-END RequestId: 002369b6-0730-4176-9ddf-981ee6e1f91e
-REPORT RequestId: 002369b6-0730-4176-9ddf-981ee6e1f91e	Init Duration: 0.91 ms	Duration: 2032.54 ms	Billed Duration: 2033 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
-END RequestId: 7bd837cc-3875-4d0e-bb0c-9c4fe4445806
-REPORT RequestId: 7bd837cc-3875-4d0e-bb0c-9c4fe4445806	Init Duration: 1.45 ms	Duration: 5378.91 ms	Billed Duration: 5379 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
-START RequestId: 8c3ed1f6-1ace-427b-b802-15f5c7240d1b Version: $LATEST
-START RequestId: 441244c9-023e-4cee-bb45-cdb0dd31faca Version: $LATEST
-2022-09-01T09:37:43.323Z	441244c9-023e-4cee-bb45-cdb0dd31faca	INFO	{"callbackWaitsForEmptyEventLoop":true,"functionVersion":"$LATEST","functionName":"TodosFunction","memoryLimitInMB":"128","logGroupName":"aws/lambda/TodosFunction","logStreamName":"$LATEST","invokedFunctionArn":"arn:aws:lambda:us-east-1:012345678912:function:TodosFunction","awsRequestId":"441244c9-023e-4cee-bb45-cdb0dd31faca"}
-2022-09-01T09:37:43.352Z	441244c9-023e-4cee-bb45-cdb0dd31faca	INFO	{"httpMethod":"POST","path":"/todos","headers":{"content-type":"application/json"},"body":"{\"name\":\"navayuvan\"}","isBase64Encoded":false}
-END RequestId: 441244c9-023e-4cee-bb45-cdb0dd31faca
-REPORT RequestId: 441244c9-023e-4cee-bb45-cdb0dd31faca	Init Duration: 1.11 ms	Duration: 2031.28 ms	Billed Duration: 2032 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
-END RequestId: 8c3ed1f6-1ace-427b-b802-15f5c7240d1b
-REPORT RequestId: 8c3ed1f6-1ace-427b-b802-15f5c7240d1b	Init Duration: 1.10 ms	Duration: 5675.47 ms	Billed Duration: 5676 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+START RequestId: 44eb2f63-48f6-455b-9c03-b0c67753faa2 Version: $LATEST
+START RequestId: 14b6f57f-2815-4336-8b28-4c3720dc3c9f Version: $LATEST
+2022-09-01T11:49:16.450Z	14b6f57f-2815-4336-8b28-4c3720dc3c9f	ERROR	TypeError: Cannot read property 'content-type' of undefined    at ServerResponse.getHeader (_http_outgoing.js:550:24)    at ServerResponse.res.get (/var/task/node_modules/express/lib/response.js:812:15)    at ServerResponse.json (/var/task/node_modules/express/lib/response.js:274:13)    at /var/task/src/todo.router.js:5:14    at Layer.handle [as handle_request] (/var/task/node_modules/express/lib/router/layer.js:95:5)    at next (/var/task/node_modules/express/lib/router/route.js:144:13)    at Route.dispatch (/var/task/node_modules/express/lib/router/route.js:114:3)    at Layer.handle [as handle_request] (/var/task/node_modules/express/lib/router/layer.js:95:5)    at /var/task/node_modules/express/lib/router/index.js:284:15    at Function.process_params (/var/task/node_modules/express/lib/router/index.js:346:12)
+2022-09-01T11:49:16.463Z	14b6f57f-2815-4336-8b28-4c3720dc3c9f	ERROR	Uncaught Exception 	{"errorType":"TypeError","errorMessage":"Cannot convert undefined or null to object","stack":["TypeError: Cannot convert undefined or null to object","    at ServerResponse.removeHeader (_http_outgoing.js:611:30)","    at write (/var/task/node_modules/finalhandler/index.js:282:9)","    at send (/var/task/node_modules/finalhandler/index.js:306:5)","    at Immediate.<anonymous> (/var/task/node_modules/finalhandler/index.js:133:5)","    at Immediate.<anonymous> (/var/task/node_modules/express/lib/router/index.js:646:15)","    at processImmediate (internal/timers.js:463:21)"]}
+END RequestId: 14b6f57f-2815-4336-8b28-4c3720dc3c9f
+REPORT RequestId: 14b6f57f-2815-4336-8b28-4c3720dc3c9f	Init Duration: 1.12 ms	Duration: 2182.73 ms	Billed Duration: 2183 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+END RequestId: 44eb2f63-48f6-455b-9c03-b0c67753faa2
+REPORT RequestId: 44eb2f63-48f6-455b-9c03-b0c67753faa2	Init Duration: 0.93 ms	Duration: 5688.63 ms	Billed Duration: 5689 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+START RequestId: 684d9481-3fed-4613-b019-04fd14fd1f1c Version: $LATEST
+START RequestId: 6fa461b1-ee9f-4449-9864-bd22acfd2bbd Version: $LATEST
+2022-09-01T11:49:42.901Z	6fa461b1-ee9f-4449-9864-bd22acfd2bbd	INFO	{  todosMessage: {    httpMethod: 'POST',    path: '/todos',    headers: { 'content-type': 'application/json' },    body: '{"name":"navayuvan"}',    isBase64Encoded: false  }}
+END RequestId: 6fa461b1-ee9f-4449-9864-bd22acfd2bbd
+REPORT RequestId: 6fa461b1-ee9f-4449-9864-bd22acfd2bbd	Init Duration: 1.51 ms	Duration: 2244.72 ms	Billed Duration: 2245 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+END RequestId: 684d9481-3fed-4613-b019-04fd14fd1f1c
+REPORT RequestId: 684d9481-3fed-4613-b019-04fd14fd1f1c	Init Duration: 1.18 ms	Duration: 5980.12 ms	Billed Duration: 5981 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+START RequestId: 55a87ac5-8bb0-47d4-ba4f-9bc48c3b6455 Version: $LATEST
+START RequestId: 1cad2c8d-b575-4337-93c4-d7560685c968 Version: $LATEST
+2022-09-01T11:50:18.569Z	1cad2c8d-b575-4337-93c4-d7560685c968	INFO	{ todosMessage: '{"name":"navayuvan"}' }
+END RequestId: 1cad2c8d-b575-4337-93c4-d7560685c968
+REPORT RequestId: 1cad2c8d-b575-4337-93c4-d7560685c968	Init Duration: 0.95 ms	Duration: 2174.25 ms	Billed Duration: 2175 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+END RequestId: 55a87ac5-8bb0-47d4-ba4f-9bc48c3b6455
+REPORT RequestId: 55a87ac5-8bb0-47d4-ba4f-9bc48c3b6455	Init Duration: 1.05 ms	Duration: 5697.29 ms	Billed Duration: 5698 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+START RequestId: 0fd247bb-e939-4aee-99af-2f124896dd9c Version: $LATEST
+START RequestId: 8381945b-d42b-42db-b97f-73a3741e1bf0 Version: $LATEST
+2022-09-01T11:50:57.396Z	8381945b-d42b-42db-b97f-73a3741e1bf0	INFO	{ todosMessage: { name: 'navayuvan' } }
+END RequestId: 8381945b-d42b-42db-b97f-73a3741e1bf0
+REPORT RequestId: 8381945b-d42b-42db-b97f-73a3741e1bf0	Init Duration: 0.98 ms	Duration: 2218.23 ms	Billed Duration: 2219 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+END RequestId: 0fd247bb-e939-4aee-99af-2f124896dd9c
+REPORT RequestId: 0fd247bb-e939-4aee-99af-2f124896dd9c	Init Duration: 1.27 ms	Duration: 5757.31 ms	Billed Duration: 5758 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+START RequestId: 0c3e0a74-6acf-4ed8-a799-09f92724bab0 Version: $LATEST
+START RequestId: ae43890e-5328-4deb-82f5-c2054a9ed4dd Version: $LATEST
+2022-09-01T11:51:39.140Z	ae43890e-5328-4deb-82f5-c2054a9ed4dd	INFO	{ todosMessage: { name: 'Naayuvan' } }
+END RequestId: ae43890e-5328-4deb-82f5-c2054a9ed4dd
+REPORT RequestId: ae43890e-5328-4deb-82f5-c2054a9ed4dd	Init Duration: 1.02 ms	Duration: 2206.36 ms	Billed Duration: 2207 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+END RequestId: 0c3e0a74-6acf-4ed8-a799-09f92724bab0
+REPORT RequestId: 0c3e0a74-6acf-4ed8-a799-09f92724bab0	Init Duration: 1.16 ms	Duration: 5756.36 ms	Billed Duration: 5757 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+START RequestId: ff6341c4-c2a1-43d0-87aa-acf4e40aaad1 Version: $LATEST
+START RequestId: b91094d4-e641-455c-a02a-d163b45893bf Version: $LATEST
+2022-09-01T11:54:32.801Z	b91094d4-e641-455c-a02a-d163b45893bf	INFO	{ todosMessage: { name: 'Naayuvan' }, id: '1' }
+END RequestId: b91094d4-e641-455c-a02a-d163b45893bf
+REPORT RequestId: b91094d4-e641-455c-a02a-d163b45893bf	Init Duration: 1.49 ms	Duration: 2159.28 ms	Billed Duration: 2160 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+END RequestId: ff6341c4-c2a1-43d0-87aa-acf4e40aaad1
+REPORT RequestId: ff6341c4-c2a1-43d0-87aa-acf4e40aaad1	Init Duration: 1.18 ms	Duration: 5689.85 ms	Billed Duration: 5690 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
