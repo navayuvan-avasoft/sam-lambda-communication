@@ -1,0 +1,7 @@
+{
+  "httpMethod": "POST",
+  "path": "/todos",
+  "headers": { "content-type": "application/json" },
+  "body": "{\"name\":\"navayuvan\"}",
+  "isBase64Encoded": false
+}

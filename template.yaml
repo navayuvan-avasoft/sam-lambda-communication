@@ -1,0 +1,43 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  lamda local demo
+
+Resources:
+  TodosFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: todos/ # format is projectPath/
+      Handler: app.lambdaHandler # format is filename.functionName
+      Runtime: nodejs12.x
+      Timeout: 10
+      Events:
+        RootPath:
+          Type: HttpApi # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /todos
+            Method: any
+        AllPath:
+          Type: HttpApi # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /todos/{proxy+}
+            Method: any
+
+  UsersFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: users/ # format is projectPath/
+      Handler: app.lambdaHandler # format is filename.functionName
+      Runtime: nodejs12.x
+      Timeout: 10
+      Events:
+        RootPath:
+          Type: HttpApi # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /users
+            Method: any
+        AllPath:
+          Type: HttpApi # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /users/{proxy+}
+            Method: any
